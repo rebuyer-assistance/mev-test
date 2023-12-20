@@ -34,7 +34,7 @@ async function run() {
         from: user2.address,
         to: user1.address,
         value: BigNumber.from(String(1e16)),
-        maxPriorityFeePerGas: BigNumber.from(feeData.maxPriorityFeePerGas).mul(120).div(100),
+        maxPriorityFeePerGas: BigNumber.from(feeData.maxPriorityFeePerGas).mul(800).div(100),
         maxFeePerGas: feeData.maxFeePerGas,
         gasLimit: 21000,
         nonce: await provider.getTransactionCount(user2.address, 'pending')

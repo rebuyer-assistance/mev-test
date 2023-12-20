@@ -1,3 +1,4 @@
+# Test 1
 ```
  ts-node ./index.ts
 {
@@ -74,6 +75,87 @@
     }
   ],
   "stateBlockNumber": 18821649,
+  "totalGasUsed": 42000
+}
+```
+# Test 2
+
+```
+ ts-node index.ts
+{
+  user1: Wallet {
+    _isSigner: true,
+    _signingKey: [Function (anonymous)],
+    _mnemonic: [Function (anonymous)],
+    address: '0x9b4e7B2609329Bd312C58fBEdb072eE07db2a2d5',
+    provider: null
+  }
+}
+{
+  user2: Wallet {
+    _isSigner: true,
+    _signingKey: [Function (anonymous)],
+    _mnemonic: [Function (anonymous)],
+    address: '0xDEFEA0b8D71ED65072952e6c32bBF08CC5F06014',
+    provider: null
+  }
+}
+{
+  tx1Signed: '0xf86b8085113cd695e782520894defea0b8d71ed65072952e6c32bbf08cc5f06014872386f26fc100008026a02ec981bc7164f4724888fb3fc1f3ae77f3b8483c0c605c21c8e02aaa408f6688a0089af04974575c67ab592ec323284bb45b8774a8d672107c637d74655b4b0326'
+}
+{
+  tx2Signed: '0x02f87301808502cb4178008522cd298ef0825208949b4e7b2609329bd312c58fbedb072ee07db2a2d5872386f26fc1000080c080a00f500072743882f1a4d23c785671dd971f976a61db5389eef7e757d034386551a00aa49ba548b95cbaec67c26e3a2692928e308d89f254aa1582abc327071a2677'
+}
+{
+  signedTransactions: [
+    '0xf86b8085113cd695e782520894defea0b8d71ed65072952e6c32bbf08cc5f06014872386f26fc100008026a02ec981bc7164f4724888fb3fc1f3ae77f3b8483c0c605c21c8e02aaa408f6688a0089af04974575c67ab592ec323284bb45b8774a8d672107c637d74655b4b0326',
+    '0x02f87301808502cb4178008522cd298ef0825208949b4e7b2609329bd312c58fbedb072ee07db2a2d5872386f26fc1000080c080a00f500072743882f1a4d23c785671dd971f976a61db5389eef7e757d034386551a00aa49ba548b95cbaec67c26e3a2692928e308d89f254aa1582abc327071a2677'
+  ],
+  targetBlockNumber: 18826352
+}
+{
+  "bundleGasPrice": {
+    "type": "BigNumber",
+    "hex": "0x01f1d33ed5"
+  },
+  "bundleHash": "0x3f06eca0695344606a1cd55445611967ed68d5f872ebe6b6a0501edd615127fa",
+  "coinbaseDiff": {
+    "type": "BigNumber",
+    "hex": "0x013f0a71746150"
+  },
+  "ethSentToCoinbase": {
+    "type": "BigNumber",
+    "hex": "0x00"
+  },
+  "gasFees": {
+    "type": "BigNumber",
+    "hex": "0x013f0a71746150"
+  },
+  "results": [
+    {
+      "txHash": "0xc128e7e12175251b156296826e8b8ec5d1cbf2586a8d86778baca115eedc5872",
+      "gasUsed": 21000,
+      "gasPrice": "4704241066",
+      "gasFees": "98789062386000",
+      "fromAddress": "0x9b4e7B2609329Bd312C58fBEdb072eE07db2a2d5",
+      "toAddress": "0xDEFEA0b8D71ED65072952e6c32bBF08CC5F06014",
+      "coinbaseDiff": "98789062386000",
+      "ethSentToCoinbase": "0",
+      "value": "0x"
+    },
+    {
+      "txHash": "0x1f0cc9919cf4ae7ea9cd1024e29f6cb31a5deba117def39d0a74a6fa6f6ebaf7",
+      "gasUsed": 21000,
+      "gasPrice": "12000000000",
+      "gasFees": "252000000000000",
+      "fromAddress": "0xDEFEA0b8D71ED65072952e6c32bBF08CC5F06014",
+      "toAddress": "0x9b4e7B2609329Bd312C58fBEdb072eE07db2a2d5",
+      "coinbaseDiff": "252000000000000",
+      "ethSentToCoinbase": "0",
+      "value": "0x"
+    }
+  ],
+  "stateBlockNumber": 18826351,
   "totalGasUsed": 42000
 }
 ```
